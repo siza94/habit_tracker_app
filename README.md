@@ -27,4 +27,4 @@ Clone the repository from GitHub:
 
 ```bash
 git clone https://github.com/siza94/habit_tracker_app.git
-cd habit-tracker
+cd habit_tracker_app
