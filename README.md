@@ -26,5 +26,5 @@ This project was built as part of an applied learning exercise in habit-tracking
 Clone the repository from GitHub:
 
 ```bash
-git clone https://github.com/<your-username>/habit-tracker.git
+git clone https://github.com/siza94/habit_tracker_app.git
 cd habit-tracker
