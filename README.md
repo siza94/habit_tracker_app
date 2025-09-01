@@ -63,13 +63,4 @@ View habit streaks and analytics
 
 Navigate between views or return to the main menu
 
-## Running Tests
-
-This project uses unittest for test coverage.
-To run all tests:
-
-```bash
-python -m unittest discover tests
-```
-
 Developed by Sithsaba Zantsi
