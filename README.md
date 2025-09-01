@@ -28,3 +28,44 @@ Clone the repository from GitHub:
 ```bash
 git clone https://github.com/siza94/habit_tracker_app.git
 cd habit_tracker_app
+```
+
+Set up a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate   # On Linux / Mac
+venv\Scripts\activate      # On Windows
+```
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+python main.py
+```
+
+Follow the interactive menu prompts to:
+
+Add a new habit
+
+Edit or delete an existing habit
+
+View habit streaks and analytics
+
+Navigate between views or return to the main menu
+
+## Running Tests
+
+This project uses unittest for test coverage.
+To run all tests:
+
+```bash
+python -m unittest discover tests
+```
+
+Developed by Sithsaba Zantsi
