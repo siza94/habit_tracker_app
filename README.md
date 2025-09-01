@@ -1,9 +1,13 @@
 # Habit Tracker with Analytics
 
-A lightweight Python-based **Habit Tracking Application** with streak analytics.  
-Users can create, edit, and delete habits, and track progress through daily, weekly, and monthly streak calculations.  
+A lightweight Python-based **Habit Tracking Application** that makes it easier to keep track of your habits with streak analytics
+to see how much progress you have made with each habit.
 
-This project was built as part of an applied learning exercise in habit-tracking systems and analytics.
+Users can create, edit, and delete habits, and track progress through daily, weekly, and monthly streak calculations that will keep you
+more informed about the habits you are forming.  
+
+This project was built as part of a IU International University of Applied AScience learning project in applying fundamental principles
+when building a Python project using object orientated principles.
 
 ---
 
