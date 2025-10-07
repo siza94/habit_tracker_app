@@ -3,6 +3,8 @@
 A lightweight Python-based **Habit Tracking Application** that makes it easier to keep track of your habits with streak analytics
 to see how much progress you have made with each habit.
 
+The Habit Tracker is a command-line application designed to help users build, track, and analyze their habits. Whether you want to establish a daily workout routine, read weekly, or break bad habits, this app provides a structured way to monitor progress and stay accountable.
+
 Users can create, edit, and delete habits, and track progress through daily, weekly, and monthly streak calculations that will keep you
 more informed about the habits you are forming.  
 
@@ -25,6 +27,12 @@ when building a Python project using object orientated principles.
 
 ---
 
+## Tools 
+
+1. Python 3.7+
+2. Required packages: matplotlib
+3. An IDE or code editor e.g. Visual Studio Code, PyCharm etc.
+
 ## Installation
 
 Clone the repository from GitHub:
@@ -34,23 +42,21 @@ git clone https://github.com/siza94/habit_tracker_app.git
 cd habit_tracker_app
 ```
 
-Set up a virtual environment:
-
-```bash
-python -m venv venv
-source venv/bin/activate   # On Linux / Mac
-venv\Scripts\activate      # On Windows
-```
-
 Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install matplotlib pytest
 ```
 
 Run the application:
 
 ```bash
 python main.py
+```
+
+Run the tests:
+
+```bash
+pytest
 ```
 
 Follow the interactive menu prompts to:
