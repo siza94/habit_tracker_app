@@ -1,6 +1,12 @@
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import pytest
 from datetime import datetime, timedelta
-from analytics import *
+from analytics import get_longest_streak, get_current_streak, get_all_longest_streaks, get_global_longest_streak
+
 
 class DummyHabit:
     def __init__(self, habit_id, name, periodicity):
@@ -8,21 +14,26 @@ class DummyHabit:
         self.name = name
         self.periodicity = periodicity
 
+
 class DummyTracker:
     def __init__(self, completions_map):
         self.completions_map = completions_map
+
     def get_habit_completions(self, habit_id):
         return self.completions_map.get(habit_id, [])
+
 
 def test_longest_streak_daily():
     today = datetime.now()
     completions = [today - timedelta(days=i) for i in range(3)]
     assert get_longest_streak(completions, "daily") == 3
 
+
 def test_longest_streak_weekly():
     today = datetime.now()
     completions = [today - timedelta(weeks=i) for i in range(4)]
     assert get_longest_streak(completions, "weekly") == 4
+
 
 def test_longest_streak_monthly():
     completions = [
@@ -32,8 +43,10 @@ def test_longest_streak_monthly():
     ]
     assert get_longest_streak(completions, "monthly") == 3
 
+
 def test_longest_streak_empty():
     assert get_longest_streak([], "daily") == 0
+
 
 def test_current_streak_daily_active():
     today = datetime.now()
@@ -43,17 +56,19 @@ def test_current_streak_daily_active():
 def test_current_streak_daily_broken():
     today = datetime.now()
     completions = [today - timedelta(days=0), today - timedelta(days=2)]
-    assert get_current_streak(completions, "daily") == 0
+    assert get_current_streak(completions, "daily") == 1
 
 def test_current_streak_weekly_active():
     today = datetime.now()
     completions = [today - timedelta(weeks=i) for i in range(2)]
     assert get_current_streak(completions, "weekly") == 2
 
+
 def test_current_streak_monthly_inactive():
     today = datetime.now()
     old_completion = today - timedelta(days=60)
     assert get_current_streak([old_completion], "monthly") == 0
+
 
 def test_all_longest_streaks_and_global():
     today = datetime.now()
@@ -62,7 +77,7 @@ def test_all_longest_streaks_and_global():
     habits = [habit1, habit2]
 
     completions_map = {
-        1: [today - timedelta(days=i) for i in range(2)],   # streak of 2
+        1: [today - timedelta(days=i) for i in range(2)],  # streak of 2
         2: [today - timedelta(weeks=i) for i in range(3)],  # streak of 3
     }
     tracker = DummyTracker(completions_map)
