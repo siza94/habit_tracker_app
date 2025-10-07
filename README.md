@@ -44,7 +44,7 @@ cd habit_tracker_app
 
 Install dependencies:
 ```bash
-pip install matplotlib pytest
+pip install -r requirements.txt
 ```
 
 Run the application:
