@@ -62,34 +62,34 @@ python main.py
 ## Main Menu Options
 
 1. Create a New Habit
-Enter habit name and select periodicity (daily/weekly/monthly)
+- Enter habit name and select periodicity (daily/weekly/monthly)
 
-Example: "Morning Meditation" with "daily" periodicity
+- Example: "Morning Meditation" with "daily" periodicity
 
 2. Complete a Habit
-View all habits and mark them as completed
+- View all habits and mark them as completed
 
-Tracks completion timestamp automatically
+- Tracks completion timestamp automatically
 
 3. View All Habits
-Display all tracked habits with their IDs and periodicities
+- Display all tracked habits with their IDs and periodicities
 
 4. Habit Analytics
-4.1 View all habits
+- View all habits
 
-4.2 Filter habits by periodicity
+- Filter habits by periodicity
 
-4.3 View global longest streak across all habits
+- View global longest streak across all habits
 
-4.4 View longest streak for a specific habit
+- View longest streak for a specific habit
 
 5. Generate Progress Graph
-Create visual progress charts for any habit
+- Create visual progress charts for any habit
 
-Graphs are saved in the graphs/ directory as PNG files
+- Graphs are saved in the graphs/ directory as PNG files
 
 6. Exit
-Safely exit the application
+- Safely exit the application
 
 ## Running Tests
 
