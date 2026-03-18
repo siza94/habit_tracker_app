@@ -8,7 +8,7 @@ The Habit Tracker is a command-line application designed to help users build, tr
 Users can create, edit, and delete habits, and track progress through daily, weekly, and monthly streak calculations that will keep you
 more informed about the habits you are forming.  
 
-This project was built as part of a IU International University of Applied AScience learning project in applying fundamental principles
+This project was built as part of a IU International University of Applied Sciences learning project in applying fundamental principles
 when building a Python project using object orientated principles.
 
 ---
