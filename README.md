@@ -109,4 +109,4 @@ pytest tests/test_habits.py
 pytest tests/test_analytics.py
 ```
 
-Developed by Sithsaba Zantsi
+📜 License This project is for educational purposes and does not hold any proprietary data or licensing constraints. The project is created for learning purposes as part of a submission as part of Object Orientated Programming with Python for IU Applied University of Sciences
